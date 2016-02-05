@@ -8,6 +8,7 @@ import com.jti.sisikaryakan.support.Gender;
 import play.libs.Json;
 import play.mvc.*;
 
+import views.html.*;
 
 public class Application extends Controller {
 
@@ -33,9 +34,6 @@ public class Application extends Controller {
     }
 
 
-    /**
-     * @return
-     */
     private static Employee registerStaff(Employee supervisor,
                                           String firstName, String lastName, Gender gender,
                                           Byte age, String categoryStaff,
