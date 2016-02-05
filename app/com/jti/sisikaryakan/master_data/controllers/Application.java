@@ -1,4 +1,4 @@
-package controllers;
+package com.jti.sisikaryakan.master_data.controllers;
 
 import play.*;
 import play.mvc.*;
