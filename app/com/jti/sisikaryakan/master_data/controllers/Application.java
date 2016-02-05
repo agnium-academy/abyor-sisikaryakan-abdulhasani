@@ -8,7 +8,7 @@ import com.jti.sisikaryakan.support.Gender;
 import play.libs.Json;
 import play.mvc.*;
 
-import views.html.*;
+
 
 public class Application extends Controller {
 
@@ -34,6 +34,22 @@ public class Application extends Controller {
     }
 
 
+    /**
+     *
+     * @param supervisor
+     * @param firstName
+     * @param lastName
+     * @param gender
+     * @param age
+     * @param categoryStaff
+     * @param lodgmentAllowance
+     * @param internetAllowance
+     * @param transportAllowance
+     * @param basicSalary
+     * @param assignment
+     * @param address
+     * @return
+     */
     private static Employee registerStaff(Employee supervisor,
                                           String firstName, String lastName, Gender gender,
                                           Byte age, String categoryStaff,
@@ -56,6 +72,20 @@ public class Application extends Controller {
     }
 
     /**
+     *
+     * @param manager
+     * @param firstName
+     * @param lastName
+     * @param categorySupervisor
+     * @param gender
+     * @param age
+     * @param transportAllowance
+     * @param holidayAllowance
+     * @param healthBenefits
+     * @param studyComparatif
+     * @param basicSalary
+     * @param assignment
+     * @param address
      * @return
      */
     private static Employee registerSupervisor(Employee manager, String firstName,
@@ -83,6 +113,15 @@ public class Application extends Controller {
      * Pada method ini terdapat proses objek employe
      * yang bentuknya managerdrilling.
      *
+     * @param firstName
+     * @param lastName
+     * @param gender
+     * @param age
+     * @param categoryManager
+     * @param transportAllowance
+     * @param basicSalary
+     * @param assignment
+     * @param address
      * @return Employee yang merupakan manager
      */
     private static Employee registerManager(String firstName, String lastName,
